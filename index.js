@@ -29,7 +29,7 @@ async function startServer() {
   });
   app.use("/store", async (req, res, next) => {
     const { position } = req.body;
-    console.log("position");
+
     axios.get("https://fakestoreapi.com/products").then(function (response) {
       // handle success
       // console.log(response);
